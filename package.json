@@ -4,13 +4,13 @@
   "description": "",
   "main": "",
   "scripts": {
-    "minify:js": "for %f in (src\\problems\\*.js) do (terser \"%f\" -o \"dist/%~nf.js\" -c -m)",
-    "minify:css": "for %f in (src\\gift\\*.css) do (postcss -o \"dist/gift/%~nf.css\" \"%f\")",
-    "minify:html": "for %f in (src\\payment\\*.html) do (html-minifier-terser --collapse-whitespace --remove-comments \"%f\" -o \"dist/%~nf.html\")",
+    "minify:js": "for %f in (src\\gift\\*.js) do (terser \"%f\" -o \"dist/%~nf.js\" -c -m)",
+    "minify:css": "for %f in (src\\pay.css) do (postcss -o \"dist/%~nf.css\" \"%f\")",
+    "minify:html": "for %f in (src\\index.html) do (html-minifier-terser --collapse-whitespace --remove-comments \"%f\" -o \"dist/%~nf.html\")",
     "bes:js": "for %f in (src\\bespokeJoinery\\*.js) do (terser \"%f\" -o \"dist/bespokeJoinery/%~nf.js\" -c -m)",
     "bes:css": "for %f in (src\\bespokeJoinery\\*.css) do (postcss -o \"dist/bespokeJoinery/%~nf.css\" \"%f\")",
     "bes:html": "for %f in (src\\bespokeJoinery\\*.html) do (html-minifier-terser --collapse-whitespace --remove-comments \"%f\" -o \"dist/bespokeJoinery/%~nf.html\")",
-    "build": "npm run minify:js & npm run minify:css & npm run minify:html"
+    "build": "npm run minify:css & npm run minify:html"
   },
   "keywords": [],
   "author": "",
