@@ -8,7 +8,7 @@
     "minify:css": "for %f in (src\\gift\\*.css) do (postcss -o \"dist/gift/%~nf.css\" \"%f\")",
     "prog:js": "for %f in (src\\pay.js) do (terser \"%f\" -o \"dist//%~nf.js\" -c -m)",
     "prog:css": "for %f in (src\\pay.css) do (postcss -o \"dist//%~nf.css\" \"%f\")",
-    "prog:html": "for %f in (src\\gift\\payment.html) do (html-minifier-terser --collapse-whitespace --remove-comments \"%f\" -o \"dist//%~nf.html\")",
+    "prog:html": "for %f in (src\\payment.html) do (html-minifier-terser --collapse-whitespace --remove-comments \"%f\" -o \"dist//%~nf.html\")",
     "p1:html": "for %f in (src\\gift\\*.html) do (html-minifier-terser --collapse-whitespace --remove-comments \"%f\" -o \"dist/gift/%~nf.html\")",
     "p2:html": "for %f in (src\\impact\\*.html) do (html-minifier-terser --collapse-whitespace --remove-comments \"%f\" -o \"dist/impact/%~nf.html\")",
     "p3:html": "for %f in (src\\problems\\*.html) do (html-minifier-terser --collapse-whitespace --remove-comments \"%f\" -o \"dist/problems/%~nf.html\")",
