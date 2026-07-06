@@ -15,7 +15,7 @@
     "p4:html": "for %f in (src\\serve\\*.html) do (html-minifier-terser --collapse-whitespace --remove-comments \"%f\" -o \"dist/serve/%~nf.html\")",
     "minify:html": "for %f in (src\\*.html) do (html-minifier-terser --collapse-whitespace --remove-comments \"%f\" -o \"dist/%~nf.html\")",
     "build": "npm run minify:css & npm run minify:html & npm run minify:js",
-    "build_ii": "npm run prog:css & npm run prog:html",
+    "build_ii": "npm run prog:css & npm run prog:html & npm run prog:js",
     "build_iii": "npm run minify:html & npm run p1:html & npm run p2:html & npm run p3:html & npm run p4:html",
     "build_iv": "npm run prog:css & npm run minify:css"
   },
